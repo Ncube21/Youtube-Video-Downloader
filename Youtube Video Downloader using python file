@@ -1,0 +1,14 @@
+# Code is written in python for simplicity
+
+# Pytube is not the native library. You need to install it before using it. Installation is easy when you have pip
+
+#pip install pytube
+
+import pytube
+
+
+link = input("Enter Desired Youtube Video URL")
+yt = pytube. Youtube(link)
+yt.streams.first().download()
+
+print('Download Successful, Enjoy your Video!!' , link)
